@@ -1,0 +1,39 @@
+.accordion-wrapper{
+    width: 80%;
+    max-width: 500px;
+    margin:0 auto;
+}
+.accordionBtn{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    width: 100%;
+    background-color: rgb(104, 100, 100);
+    text-align: center;
+    padding: 15px;
+    color: rgb(212, 209, 209);
+    border: 1px solid gray;
+    
+}
+.accordionBtn::after{
+    content: "+";
+    float: right;
+}
+.accordion__button--active::after{
+    content: "-";
+    float: right;
+}
+
+.contentContainer{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out; 
+
+}
+
+.accordion__content--active{
+    background-color: rgb(236, 233, 233);
+}
+p{
+    padding-bottom: 20px;
+}
